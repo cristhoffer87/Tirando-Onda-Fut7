@@ -21,6 +21,16 @@
         .hero h1 {
             font-size: 3rem;
         }
+        .highlight-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .side-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -49,29 +59,40 @@
 
     <!-- Main Content -->
     <div class="container mt-5">
-        <h2 class="text-center">Conheça Nosso Time</h2>
-        <p class="text-center">Explore as páginas para saber mais sobre nossos jogadores, comissão técnica, diretoria e jogos.</p>
+        <div class="row">
+            <!-- Left Section: Athlete Highlights -->
+            <div class="col-md-8">
+                <h2>Destaques do Time</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4 text-center">
+                        <img src="Imagens/atleta-mais-tempo.jpg" alt="Atleta com Mais Tempo" class="highlight-img">
+                        <p><strong>Atleta com Mais Tempo:</strong></p>
+                        <p>Renan Maccari da Silva - 8 anos no time</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="Imagens/atleta-mais-jogos.jpg" alt="Atleta com Mais Jogos" class="highlight-img">
+                        <p><strong>Atleta com Mais Jogos:</strong></p>
+                        <p>João Silva - 47 jogos</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="Imagens/atleta-mais-gols.jpg" alt="Atleta com Mais Gols" class="highlight-img">
+                        <p><strong>Atleta com Mais Gols:</strong></p>
+                        <p>Pedro Souza - 25 gols</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row text-center mt-4">
-            <div class="col-md-3">
-                <h3>Atletas</h3>
-                <p>Conheça nossos jogadores e veja seus perfis.</p>
-                <a href="atletas.html" class="btn btn-primary">Ver Atletas</a>
-            </div>
-            <div class="col-md-3">
-                <h3>Comissão Técnica</h3>
-                <p>Confira nossa comissão técnica e seus papéis no time.</p>
-                <a href="comissao.html" class="btn btn-primary">Ver Comissão</a>
-            </div>
-            <div class="col-md-3">
-                <h3>Diretoria</h3>
-                <p>Saiba mais sobre a diretoria que comanda nosso clube.</p>
-                <a href="diretoria.html" class="btn btn-primary">Ver Diretoria</a>
-            </div>
-            <div class="col-md-3">
-                <h3>Calendário</h3>
-                <p>Fique por dentro dos jogos e eventos do time.</p>
-                <a href="calendario.html" class="btn btn-primary">Ver Calendário</a>
+            <!-- Right Section: Calendar -->
+            <div class="col-md-4">
+                <div class="side-section">
+                    <h3>Próximos Jogos</h3>
+                    <ul class="list-unstyled">
+                        <li>22/01 - 22h: Time A x Time B</li>
+                        <li>25/01 - 20h: Time C x Tirando Onda</li>
+                        <li>30/01 - 18h: Tirando Onda x Time D</li>
+                    </ul>
+                    <a href="calendario.html" class="btn btn-primary mt-3">Ver Calendário Completo</a>
+                </div>
             </div>
         </div>
     </div>
