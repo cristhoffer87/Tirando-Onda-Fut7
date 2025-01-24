@@ -62,8 +62,12 @@
             border: 2px solid #ffd700; /* Borda amarela */
         }
         footer {
-            background-color: #ffffff;
-            color: white;
+            background-color: #002b5c;
+            color: #ffd700;
+        }
+        .highlight-text {
+            color: #002b5c; /* Azul padrão do time */
+            font-weight: bold; /* Destaca o texto */
         }
     </style>
 </head>
@@ -98,21 +102,21 @@
         <div class="row">
             <!-- Left Section: Athlete Highlights -->
             <div class="col-md-8">
-                <h2>Destaques do Time</h2>
+                <h2 class="highlight-text">Destaques do Time</h2>
                 <div class="row mt-4">
                     <div class="col-md-4 text-center">
                         <img src="Imagens/padrao.png" class="img-fluid rounded" style="width: 200px; height: auto;">
-                        <p><strong>Atleta com mais Tempo no Tirando Onda</strong></p>
+                        <p class="highlight-text"><strong>Atleta com mais Tempo no Tirando Onda</strong></p>
                         <p>Renan Maccari da Silva - 8 anos</p>
                     </div>
                     <div class="col-md-4 text-center">
                         <img src="Imagens/atleta-mais-jogos.jpg" alt="Atleta com Mais Jogos" class="highlight-img">
-                        <p><strong>Atleta com mais Jogos pelo Tirando Onda</strong></p>
+                        <p class="highlight-text"><strong>Atleta com mais Jogos pelo Tirando Onda</strong></p>
                         <p>João Silva - 47 jogos</p>
                     </div>
                     <div class="col-md-4 text-center">
                         <img src="Imagens/atleta-mais-gols.jpg" alt="Atleta com Mais Gols" class="highlight-img">
-                        <p><strong>Maior Artilheiro do Tirando Onda</strong></p>
+                        <p class="highlight-text"><strong>Maior Artilheiro do Tirando Onda</strong></p>
                         <p>Pedro Souza - 25 gols</p>
                     </div>
                 </div>
@@ -121,7 +125,7 @@
             <!-- Right Section: Calendar -->
             <div class="col-md-4">
                 <div class="side-section">
-                    <h3>Próximos Jogos</h3>
+                    <h3 class="highlight-text">Próximos Jogos</h3>
                     <ul class="list-unstyled">
                         <li>01/02 - 15h10: Tirando Onda x JE Turismo B</li>
                     </ul>
@@ -131,9 +135,9 @@
         </div>
     </div>
 
-    <footer style="background-color: #002b5c; color: #ffd700;" class="text-center py-3 mt-5">
-    <p>&copy; 2025 Tirando Onda Fut7. Todos os direitos reservados.</p>
-</footer>
+    <footer class="text-center py-3 mt-5">
+        <p>&copy; 2025 Tirando Onda Fut7. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
