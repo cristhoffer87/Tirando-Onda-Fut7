@@ -13,7 +13,7 @@
         }
         .hero {
             background: url('banner.jpg') no-repeat center center/cover;
-            height: 400px;
+            height: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -26,10 +26,15 @@
             font-size: 3rem;
             margin-bottom: 15px;
         }
+        .hero .team-logo {
+            background-color: #002b5c; /* Faixa azul escuro */
+            padding: 20px 40px;
+            margin-top: -10px;
+            border-radius: 10px;
+        }
         .hero img {
             width: 150px;
             height: auto;
-            margin-top: 15px;
         }
         .navbar {
             background-color: #002b5c; /* Azul escuro do escudo */
@@ -60,14 +65,28 @@
             padding: 20px;
             border-radius: 10px;
             border: 2px solid #ffd700; /* Borda amarela */
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            width: 300px;
         }
         .highlight-text {
             color: #002b5c; /* Azul padrão do time */
             font-weight: bold; /* Destaca o texto */
+            text-align: center;
+        }
+        .destaques {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .destaques .item {
+            text-align: center;
         }
         footer {
             background-color: #002b5c;
             color: #ffd700;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -94,48 +113,45 @@
     <!-- Hero Section -->
     <div class="hero">
         <h1>Bem-vindo ao Tirando Onda Fut7</h1>
-        <img src="Imagens/padrao.png" class="img-fluid rounded" style="width: 200px; height: auto;">
+        <div class="team-logo">
+            <img src="Imagens/padrao.png" class="img-fluid">
+        </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="side-section">
+        <h3 class="highlight-text">Próximos Jogos</h3>
+        <ul class="list-unstyled">
+            <li class="highlight-text">01/02 - 15h10: Tirando Onda x JE Turismo B</li>
+            <li class="highlight-text">08/02 - 17h: Tirando Onda x Amigos FC</li>
+        </ul>
+        <a href="calendario.html" class="btn btn-primary mt-3" style="color: #002b5c !important;">Ver Calendário Completo</a>
     </div>
 
     <!-- Main Content -->
     <div class="container mt-5">
-        <div class="row">
-            <!-- Left Section: Athlete Highlights -->
-            <div class="col-md-8">
-                <h2 class="highlight-text">Destaques do Time</h2>
-                <div class="row mt-4">
-                    <div class="col-md-4 text-center">
-                        <img src="Imagens/padrao.png" class="img-fluid rounded" style="width: 200px; height: auto;">
-                        <p class="highlight-text"><strong>Atleta com mais Tempo no Tirando Onda</strong></p>
-                        <p>Renan Maccari da Silva - 8 anos</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="Imagens/atleta-mais-jogos.jpg" alt="Atleta com Mais Jogos" class="highlight-img">
-                        <p class="highlight-text"><strong>Atleta com mais Jogos pelo Tirando Onda</strong></p>
-                        <p>João Silva - 47 jogos</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="Imagens/atleta-mais-gols.jpg" alt="Atleta com Mais Gols" class="highlight-img">
-                        <p class="highlight-text"><strong>Maior Artilheiro do Tirando Onda</strong></p>
-                        <p>Pedro Souza - 25 gols</p>
-                    </div>
-                </div>
+        <h2 class="highlight-text">Destaques do Time</h2>
+        <div class="destaques mt-4">
+            <div class="item">
+                <img src="Imagens/padrao.png" class="img-fluid rounded" style="width: 150px; height: auto;">
+                <p class="highlight-text"><strong>Atleta com mais Tempo no Tirando Onda</strong></p>
+                <p>Renan Maccari da Silva - 8 anos</p>
             </div>
-
-            <!-- Right Section: Calendar -->
-            <div class="col-md-4">
-                <div class="side-section">
-                    <h3 class="highlight-text">Próximos Jogos</h3>
-                    <ul class="list-unstyled">
-                        <li class="highlight-text">01/02 - 15h10: Tirando Onda x JE Turismo B</li>
-                    </ul>
-                    <a href="calendario.html" class="btn btn-primary mt-3" style="color: #002b5c !important;">Ver Calendário Completo</a>
-                </div>
+            <div class="item">
+                <img src="Imagens/atleta-mais-jogos.jpg" alt="Atleta com Mais Jogos" class="img-fluid rounded" style="width: 150px; height: auto;">
+                <p class="highlight-text"><strong>Atleta com mais Jogos pelo Tirando Onda</strong></p>
+                <p>João Silva - 47 jogos</p>
+            </div>
+            <div class="item">
+                <img src="Imagens/atleta-mais-gols.jpg" alt="Atleta com Mais Gols" class="img-fluid rounded" style="width: 150px; height: auto;">
+                <p class="highlight-text"><strong>Maior Artilheiro do Tirando Onda</strong></p>
+                <p>Pedro Souza - 25 gols</p>
             </div>
         </div>
     </div>
 
-    <footer class="text-center py-3 mt-5">
+    <!-- Footer -->
+    <footer class="text-center py-3">
         <p>&copy; 2025 Tirando Onda Fut7. Todos os direitos reservados.</p>
     </footer>
 
