@@ -9,6 +9,26 @@
         body {
             font-family: Arial, sans-serif;
         }
+        .navbar {
+            background-color: #002b5c; /* Azul escuro do escudo */
+        }
+        .navbar .nav-link {
+            color: #ffffff;
+        }
+        .navbar .nav-link:hover {
+            color: #ffd700; /* Amarelo do escudo */
+        }
+        h1, h2, h3, p {
+            color: #002b5c; /* Azul escuro para títulos e textos */
+        }
+        .btn-primary {
+            background-color: #ffd700; /* Amarelo do escudo */
+            border-color: #ffd700;
+        }
+        .btn-primary:hover {
+            background-color: #e5c100;
+            border-color: #e5c100;
+        }
         .player-card {
             border: 1px solid #ddd;
             border-radius: 10px;
@@ -26,11 +46,15 @@
             margin-top: 40px;
             margin-bottom: 20px;
         }
+        footer {
+            background-color: #002b5c; /* Azul escuro no rodapé */
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="index.html">Tirando Onda Fut7</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,209 +78,100 @@
         <!-- Goleiros -->
         <h2 class="position-header">Goleiros</h2>
         <div class="row">
-           <div class="col-md-4 text-center">
-                <img src="Imagens/padrao.png" class="img-fluid rounded" style="width: 50px; height: auto;">
+            <div class="col-md-4 player-card">
+                <img src="Imagens/padrao.png" class="img-fluid rounded">
                 <h3>Renan Maccari da Silva</h3>
                 <p>Número: 23</p>
                 <a href="perfil_atleta1.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="atleta2.jpg" class="img-fluid rounded" alt="Nome do atleta">
+            <div class="col-md-4 player-card">
+                <img src="atleta2.jpg" class="img-fluid rounded">
                 <h3>Gabriel da Veiga Coutinho de Oliveira</h3>
                 <p>Número: 98</p>
                 <a href="perfil_atleta2.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="atleta3.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Maicon Renato Schlickmann </h3>
+            <div class="col-md-4 player-card">
+                <img src="atleta3.jpg" class="img-fluid rounded">
+                <h3>Maicon Renato Schlickmann</h3>
                 <p>Número: 26</p>
                 <a href="perfil_atleta3.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="atleta4.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Everton Deividy Paulo </h3>
+            <div class="col-md-4 player-card">
+                <img src="atleta4.jpg" class="img-fluid rounded">
+                <h3>Everton Deividy Paulo</h3>
                 <p>Número: 1</p>
                 <a href="perfil_atleta4.html" class="btn btn-primary">Ver Perfil</a>
             </div>
         </div>
-    </div>
 
+        <!-- Fixos -->
         <h2 class="position-header">Fixos</h2>
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="fixo1.jpg" class="img-fluid rounded" alt="Nome do atleta">
+            <div class="col-md-4 player-card">
+                <img src="fixo1.jpg" class="img-fluid rounded">
                 <h3>Deivid da Costa</h3>
                 <p>Número: 3</p>
                 <a href="perfil_fixo1.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="fixo2.jpg" class="img-fluid rounded" alt="Nome do atleta">
+            <div class="col-md-4 player-card">
+                <img src="fixo2.jpg" class="img-fluid rounded">
                 <h3>Augusto Carlos Dias da Rosa</h3>
                 <p>Número: 4</p>
                 <a href="perfil_fixo2.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="fixo3.jpg" class="img-fluid rounded" alt="Nome do atleta">
+            <div class="col-md-4 player-card">
+                <img src="fixo3.jpg" class="img-fluid rounded">
                 <h3>Rickelm Martins Claro dos Santos</h3>
                 <p>Número: 15</p>
                 <a href="perfil_fixo3.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="fixo4.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Wesley dos Reis Marcos </h3>
+            <div class="col-md-4 player-card">
+                <img src="fixo4.jpg" class="img-fluid rounded">
+                <h3>Wesley dos Reis Marcos</h3>
                 <p>Número: 2</p>
                 <a href="perfil_fixo4.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="fixo5.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Rodrigo Henning</h3>
-                <p>Número: 5</p>
-                <a href="perfil_fixo5.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="fixo6.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Felipe Matheus Dantas da Silva</h3>
-                <p>Número: 14</p>
-                <a href="perfil_fixo6.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-        </div>
         </div>
 
         <!-- Meias -->
         <h2 class="position-header">Meias</h2>
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="meia1.jpg" class="img-fluid rounded" alt="Nome do atleta">
+            <div class="col-md-4 player-card">
+                <img src="meia1.jpg" class="img-fluid rounded">
                 <h3>Fausto Oliveira Fernandes</h3>
                 <p>Número: 17</p>
                 <a href="perfil_meia1.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="meia2.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Lucas Augusto Ribeiro Silva</h3>
-                <p>Número: 10</p>
-                <a href="perfil_meia2.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="meia3.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Erick Willian Galvão Packer</h3>
-                <p>Número: 22</p>
-                <a href="perfil_meia3.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
         </div>
-        </div>
-
 
         <!-- Alas -->
         <h2 class="position-header">Alas</h2>
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="ala1.jpg" class="img-fluid rounded" alt="Nome do atleta">
+            <div class="col-md-4 player-card">
+                <img src="ala1.jpg" class="img-fluid rounded">
                 <h3>Fabio Augusto Rodrigues Chagas</h3>
                 <p>Número: 8</p>
                 <a href="perfil_ala1.html" class="btn btn-primary">Ver Perfil</a>
             </div>
-
-            <div class="col-md-4 text-center">
-                <img src="ala2.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Marcos Vinícius Figueiredo Machado</h3>
-                <p>Número: 20</p>
-                <a href="perfil_ala2.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="ala3.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Leonardo Regis Leite</h3>
-                <p>Número: 12</p>
-                <a href="perfil_ala3.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="ala4.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Andre Lessa da Silva</h3>
-                <p>Número: 99</p>
-                <a href="perfil_ala4.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="ala5.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Rhuan Ivair Miranda Da Rocha</h3>
-                <p>Número: 18</p>
-                <a href="perfil_ala5.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="ala6.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Rodrigo Mota dos Santos</h3>
-                <p>Número: 7</p>
-                <a href="perfil_ala6.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="ala7.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Gabriel Quirino</h3>
-                <p>Número: 11</p>
-                <a href="perfil_ala7.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-    <div class="col-md-4 text-center">
-                <img src="ala8.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Carlos Eduardo Vieira </h3>
-                <p>Número: 6</p>
-                <a href="perfil_ala8.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-        </div>
         </div>
 
         <!-- Pivôs -->
-        <h2 class="position-header">Pivô</h2>
+        <h2 class="position-header">Pivôs</h2>
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="pivo1.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Richard Marques Euriques </h3>
+            <div class="col-md-4 player-card">
+                <img src="pivo1.jpg" class="img-fluid rounded">
+                <h3>Richard Marques Euriques</h3>
                 <p>Número: 9</p>
-                <a href="perfil_pivo.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="pivo2.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Ezequiel Cardoso de Oliveira</h3>
-                <p>Número: 92</p>
-                <a href="perfil_pivo2.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="pivo3.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Elso Gregol dos Santos</h3>
-                <p>Número: 19</p>
-                <a href="perfil_pivo3.html" class="btn btn-primary">Ver Perfil</a>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <img src="pivo4.jpg" class="img-fluid rounded" alt="Nome do atleta">
-                <h3>Pablo Waldemar Alves</h3>
-                <p>Número: 21</p>
-                <a href="perfil_pivo4.html" class="btn btn-primary">Ver Perfil</a>
+                <a href="perfil_pivo1.html" class="btn btn-primary">Ver Perfil</a>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="text-center py-3 mt-5">
         <p>&copy; 2025 Tirando Onda Fut7. Todos os direitos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
->>>>>>> b9c26bccec40d176cfa1500a69fa5100b645d359
