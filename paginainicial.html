@@ -16,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: navy blue;
+            color: #ffffff; /* Texto em branco */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             text-align: center;
         }
@@ -29,21 +29,38 @@
             height: auto;
             margin-top: 15px;
         }
-        .highlight-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .navbar {
+            background-color: #002b5c; /* Azul escuro do escudo */
+        }
+        .navbar .nav-link {
+            color: #ffffff;
+        }
+        .navbar .nav-link:hover {
+            color: #ffd700; /* Amarelo do escudo */
+        }
+        .btn-primary {
+            background-color: #ffd700; /* Amarelo do escudo */
+            border-color: #ffd700;
+        }
+        .btn-primary:hover {
+            background-color: #e5c100;
+            border-color: #e5c100;
         }
         .side-section {
             background-color: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
+            border: 2px solid #ffd700; /* Borda amarela */
+        }
+        footer {
+            background-color: #002b5c;
+            color: white;
         }
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="index.html">Tirando Onda Fut7</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +84,7 @@
         <img src="Imagens/padrao.png" class="img-fluid rounded" style="width: 200px; height: auto;">
     </div>
 
-   <!-- Main Content -->
+    <!-- Main Content -->
     <div class="container mt-5">
         <div class="row">
             <!-- Left Section: Athlete Highlights -->
@@ -76,7 +93,7 @@
                 <div class="row mt-4">
                     <div class="col-md-4 text-center">
                         <img src="Imagens/padrao.png" class="img-fluid rounded" style="width: 200px; height: auto;">
-                        <p><strong>Atleta com mais Tempo de Tirando Onda:</strong></p>
+                        <p><strong>Atleta com mais Tempo no Tirando Onda:</strong></p>
                         <p>Renan Maccari da Silva - 8 anos</p>
                     </div>
                     <div class="col-md-4 text-center">
@@ -98,8 +115,7 @@
                     <h3>Próximos Jogos</h3>
                     <ul class="list-unstyled">
                         <li>01/02 - 15h10: Tirando Onda x JE Turismo B</li>
-                        <!--<li>25/01 - 20h: Time C x Tirando Onda</li>-->
-                        </ul>
+                    </ul>
                     <a href="calendario.html" class="btn btn-primary mt-3">Ver Calendário Completo</a>
                 </div>
             </div>
@@ -107,7 +123,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    <footer class="text-center py-3">
         <p>&copy; 2025 Tirando Onda Fut7. Todos os direitos reservados.</p>
     </footer>
 
